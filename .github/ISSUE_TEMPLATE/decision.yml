@@ -1,0 +1,33 @@
+name: Decision
+description: Raise a topic to be discussed with the objective of documenting a decision
+title: "[Decision] <title>"
+labels: ["decision"]
+body:
+  - type: textarea
+    attributes:
+      label: Decision
+      description: A concise description of the question being asked
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Context
+      description: What is the context for this decision?
+      placeholder: |
+        Why do we need to make this decision?
+        What areas does it affect?
+        Does this support or negate any previous decisions?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Objective
+      description: What are we trying to achieve?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Options
+      description: What options should be considered? What are the pro's and con's of each option?
+    validations:
+      required: true
